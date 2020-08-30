@@ -1,0 +1,281 @@
+@font-face 
+{
+	 font-family:UTM Avo;
+	 src:url(font/UTM Avo.ttf) format('truetype'),
+	 font-weight:normal;
+	 font-style:normal;
+}
+*{
+	margin:0px;
+	padding:0px;
+}
+.tong
+{
+	background-color: white;
+	
+	font-family:UTM Avo;
+}
+.bg-dark
+{
+	background-color: black;
+}
+ul.header
+{
+	width:100%;
+
+}
+li.headeritem, li.headeritemcenter
+{
+	width:170px;
+	text-align: center;
+}
+
+a.linkcenterhea
+{
+	font-size:30px;
+	padding:0;
+}
+.bgcong1
+{
+	height:10px; 
+	width:60%;
+	background-color: 	#006400;
+	margin-left:35px;
+}
+.bgcong
+{
+	height:2px; 
+	width:60%;
+	background-color: 	#006400;
+	margin-top:5px;
+	margin-left:35px;
+}
+.wrap-drop
+{
+	display: none;
+}
+.nav-menu ul li:hover .wrap-drop{
+	display: block;
+	position: relative;
+	width: 200px;
+	margin-top: 20px;
+	margin-left: -20px;
+	z-index: 9;
+	background-color: white;
+	box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.15);
+	border-radius: 0px 0px 7px 7px;
+	animation-name: cd;
+    animation-duration: 0.4s;
+}
+.nav-menu a
+{
+	color:black;
+}
+.nav-menu a:hover
+{
+	color:green;
+	text-decoration: none;
+}
+@keyframes cd
+{
+    from {top:40px; opacity:0}
+    to {top:0; opacity:1}
+}
+.nav-menu ul li:hover .wrap-drop ul
+{
+	display: block;
+	margin: 8px 0 8px 15px;
+}
+.nav-menu ul li:hover .wrap-drop ul li
+{
+	padding: 10px;
+	background: transparent;
+	border-bottom: 0.5px solid #ddd;
+	text-align: left;
+	letter-spacing: 3px;
+	text-transform: capitalize;
+	font-size: 14px;
+	list-style-type: none;
+	
+}
+.nav-menu ul li:hover .wrap-drop ul li:last-child
+{
+	border-bottom: none;
+}
+.ani:hover, .ani:active
+{
+	color:green;
+	letter-spacing:1px;
+}
+.ani:after, .ani:before
+{
+	backface-visibility: hidden;
+  	border: 1px solid rgba(#fff, 0);
+  	bottom: 0px;
+  	content: " ";
+ 	display: block;
+  	margin: 0 auto;
+ 	position: relative;
+  	transition: all 280ms ease-in-out;
+  	width: 0;
+  	opacity: 0;
+  	border:1px solid green;
+	
+  	
+}
+.ani:hover:after, .ani:hover:before
+{
+	backface-visibility: hidden;
+  	transition: width 1s ease-in-out;
+ 	width: 70%;
+  	opacity: 1;
+}
+
+/*--- contact---*/
+.overflow
+{
+	width: 100%;
+	min-height:1100px;
+}
+.overflow .us
+{
+	text-align: center;
+	color: #3c5e2c;
+    margin: 0px 0 30px;
+    padding-top: 30px;
+    font-size: 16px;
+    letter-spacing: 2px;
+	font-family: "LuloCleanW01-OneBold";
+}
+.overflow .thumb
+{
+	width: 100%;
+	height: 410px;
+	background-image: url("https://circo.co/wp-content/uploads/2018/10/1_B_7lJQZsJbrSOlrs_yDJjg.jpeg");
+	background-repeat: no-repeat;
+	background-attachment: fixed; 
+	background-size: cover;
+}
+.overflow .contactus
+{
+	width: 960px;
+	margin: auto;
+	padding-top: 20px;
+}
+.overflow .contactus .title
+{
+	text-transform: uppercase;
+	color: #3c5e2c;
+	font-size: 13px;
+	font-family: "LuloCleanW01-OneBold";
+}
+.overflow .contactus .method
+{
+    color: #555;
+    font-weight: 400;
+    font-size: 17px;
+    letter-spacing: 2px;
+}
+.overflow .contactus .office
+{
+	color: #232323;
+	font-size: 20px;
+	font-weight: bold;
+	margin-top: 40px;
+}
+.overflow .contactus a
+{
+	text-decoration: none;
+}
+.overflow .contactus h2
+{
+	margin-top: 20px;
+}
+/*footer*/
+div.footer
+{
+	padding:0 100px;
+}
+.contact
+{
+	padding-top: 25px;
+	max-width: 960px;
+	height: auto;
+	display: grid;
+	grid-template-columns: 480px auto;
+	margin: auto;
+}
+.contact h2
+{
+	font-size: 15px;
+	text-transform: uppercase;
+	color:  #3c5e2c;
+	padding-bottom: 5px;
+}
+.left .fa
+{
+	padding: 8px 8px;
+	color: #3c5e2c;
+	font-size: 25px;
+	width: 35px;
+	height: 10px;
+}
+.bgfot
+{
+	height:2px; 
+	background-color: #3c5e2c;
+}
+/*form email*/
+ .right .form{
+	margin: 10px 0;
+}
+.right p 
+{
+	color:gray;
+}
+.form .email{
+	width: 250px;
+	height: 33px;
+	padding: 8px 8px;
+	border: 1px solid gray;
+	font-size: 12px;
+	color: #b4b9bc;
+}
+ .form .email:focus{
+	border: 1px solid #3c5e2c;
+}
+.form .btn{
+	width: 95px;
+	height: 33px;
+	padding: 8px 8px;
+	background-color: #3c5e2c;
+	color: white;
+	text-transform: uppercase;
+	font-size: 12px;
+	font-weight: bold;
+	cursor: pointer;
+}
+ .form p{
+	margin-top: 10px;
+	font-size: 14px;
+	color: #b4b9bc;
+}
+.bottom{
+	width: 100%;
+	height: 60px;
+	font-size: 11px;
+    border-top: 1px solid #232323;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background: #3c5e2c;
+    color: #fff;
+    font-weight: bold;
+}
+.bottom .copyright{
+	max-width: 960px;
+	margin: auto;
+	letter-spacing: 2px;
+}
+.bottom .copyright span{
+	text-transform: uppercase;
+}

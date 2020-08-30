@@ -1,0 +1,55 @@
+body
+{
+	margin:0px; 
+	padding:0px;
+	background-image:url("https://d5qmjlya0ygtg.cloudfront.net/103/108/005/-39996967-206srsm-66l4182ef9dpimf/large/avatar.jpg");
+	background-size:cover;
+	color:white;
+}
+.tong
+{
+	text-align:center;
+}
+#error
+{
+	transition: all 0.5s ease;
+	background-color:#BBBBBB;
+	width:400px;
+	margin-left:450px;
+	text-align:center;
+	color:black;
+	font-size:20px;
+	padding:0px;
+}
+ h1
+{
+	font-size:60px;
+	padding:10px 0; 
+	margin-bottom:50px;
+	margin-bottom:0px;
+	text-align:center;
+}
+.inputfield
+{
+	width:400px;
+	border-bottom:solid 4px #999966;
+	margin-left:450px;
+	margin-top:20px;
+}
+.inputfield input
+{
+	margin-top:20px;
+	font-size:25px;
+	outline:none;
+	background:none; 
+	border:none;
+	color:white;
+}
+button
+{
+	margin-top:40px;
+	font-size:20px;
+	margin-left:250px;
+	background-color:#DDDDDD;
+	cursor:pointer;
+}

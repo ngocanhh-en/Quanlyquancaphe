@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Đăng ký </title>
+	<link rel="stylesheet" href="dangkycong.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script type="text/javascript" src="F:\esclipse\jq\jquery-3.5.1.min.js"></script>
+	<script>
+		function validation()
+		{
+			var name= document.getElementById("name").value;
+			var sdt= document.getElementById("sdt").value;
+			var email= document.getElementById("email").value;
+			var pass= document.getElementById("pass").value;
+			var xacnhan= document.getElementById("xacnhan").value;
+			var error= document.getElementById("error");
+			var text;
+			error.style.padding="10px";
+			if(name.length < 5)
+			{
+				text="Vui lòng nhập tên hợp lệ";
+				error.innerHTML=text;
+				return false;
+			}
+			else if (isNaN(sdt) || sdt.length !=10)
+			{
+				text="Vui lòng kiểm tra lại số điện thoại";
+				error.innerHTML=text;
+				return false;
+			}
+			else if (email.indexOf("@")==-1 || email.length<6)
+			{
+				text="Vui lòng kiểm tra lại email";
+				error.innerHTML=text;
+				return false;
+			}
+			else if (pass.length<6)
+			{
+				text="Mật khẩu chứa ít nhất 6 ký tự";
+				error.innerHTML=text;
+				return false;
+			}
+			else if(xacnhan!=pass)
+			{
+				text="Vui lòng xác nhận lại mật khẩu";
+				error.innerHTML=text;
+				return false;
+			}
+			else 
+			{
+				alert("Đăng ký thành công ")
+				return true;
+			}
+			
+		}
+
+
+	</script>
+
+</head>
+<body>
+	<div class="tong">
+		<h1>ĐĂNG KÝ </h1>
+		<div id="error"></div>
+		<form id="form" onsubmit="return validation()">
+			<div class="inputfield">
+				<i class="fa fa-user"></i>
+				<input type="text" placeholder="Name" id="name">
+			</div>
+			<div class="inputfield">
+				<i class="fa fa-phone"></i>
+				<input type="text" placeholder="Số điện thọai" id="sdt">
+			</div>
+			<div class="inputfield">
+				<i class="fa fa-envelope"></i>
+				<input type="text" placeholder="Email" id="email">
+			</div>
+			<div class="inputfield">
+				<i class="fa fa-lock"></i>
+				<input type="Password" placeholder="Mật khẩu" id="pass">
+			</div>
+			<div class="inputfield">
+				<i class="fa fa-check-square"></i>
+				<input type="Password" placeholder="Xác nhận mật khẩu" id="xacnhan">
+			</div>
+			<button > Đăng ký </button>
+
+		</form>
+
+
+	</div>
+
+</body>
+</html>
